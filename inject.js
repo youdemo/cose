@@ -57,7 +57,7 @@
           pendingRequests.delete(id)
           reject(new Error('Request timeout'))
         }
-      }, 30000)
+      }, 120000)
     })
   }
 

@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "COSE - Create Once Sync Everywhere",
+  "version": "1.0.0",
+  "description": "Create Once, Sync Everywhere. 一键将文章同步到多个平台",
+  "permissions": [
+    "storage",
+    "tabs",
+    "tabGroups",
+    "activeTab",
+    "scripting",
+    "cookies",
+    "debugger",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://*.csdn.net/*",
+    "https://*.zhihu.com/*",
+    "https://*.juejin.cn/*",
+    "https://*.jianshu.com/*",
+    "https://*.segmentfault.com/*",
+    "https://*.toutiao.com/*",
+    "https://*.douban.com/*",
+    "https://*.bilibili.com/*",
+    "https://*.51cto.com/*",
+    "https://*.weibo.com/*",
+    "https://mp.weixin.qq.com/*",
+    "https://*.sspai.com/*",
+    "https://*.xueqiu.com/*",
+    "https://*.eastmoney.com/*",
+    "https://*.wordpress.com/*",
+    "https://*.wordpress.org/*",
+    "http://localhost:*/*",
+    "http://127.0.0.1:*/*",
+    "https://md.doocs.org/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "COSE"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:*/*",
+        "http://127.0.0.1:*/*",
+        "https://md.doocs.org/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js", "platforms/*.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,4 +1,17 @@
-# COSE (Create Once Sync Everywhere)
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/headerDark.svg" />
+    <img src="assets/headerLight.svg" alt="COSE" />
+  </picture>
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Chrome Web Store](https://img.shields.io/badge/Install-Chrome%20Web%20Store-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/)
+[![YouTube](https://img.shields.io/badge/Video-YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=KTskiA8Xaj4)
+<!-- [![Bilibili](https://img.shields.io/badge/Video-Bilibili-00A1D6?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV) -->
+
+Create Once Sync Everywhere
+
+</div>
 
 配合 [doocs/md](https://github.com/doocs/md) 微信 Markdown 编辑器使用的浏览器扩展，支持一键将文章同步到多个内容平台。
 
@@ -16,8 +29,9 @@
 |------|------|
 | CSDN | 自动填充 Markdown 内容 |
 | 掘金 | 自动填充 Markdown 内容 |
-| 知乎 | 自动填充到专栏编辑器 |
 | 微信公众号 | 保留完整样式，自动保存草稿 |
+
+更多想要添加的平台欢迎提 [issue](https://github.com/doocs/cose/issues) 。
 
 ## 安装方法
 
@@ -30,6 +44,8 @@
 5. 选择 `cose` 目录
 
 ## 使用方法
+
+观看视频：[![YouTube](https://img.shields.io/badge/Video-YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=KTskiA8Xaj4)
 
 1. 安装扩展后，打开 [md.doocs.org](https://md.doocs.org) 或本地开发服务器
 2. 编辑 Markdown 内容
